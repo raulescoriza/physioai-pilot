@@ -4,8 +4,7 @@ A case set and evaluation harness for measuring whether LLMs reason **safely and
 appropriateness** on outpatient musculoskeletal physiotherapy cases: detecting red flags,
 deciding on referral and its urgency, formulating hypotheses and proposing an evidence-based plan.
 
-All cases are **synthetic**: they are inspired by real clinical patterns but are never based on
-a specific patient and contain no identifiable data.
+All cases are real clinical patterns but are never based on a specific patient and contain no identifiable data.
 
 ## Repository layout
 

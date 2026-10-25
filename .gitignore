@@ -1,10 +1,23 @@
 # Local environment / secrets (endpoints, API keys)
 .env
+.env.*
+!.env.example
 
 # Python
 .venv/
 __pycache__/
 *.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Editors / IDE
+.vscode/
+.idea/
 
 # OS
 .DS_Store
