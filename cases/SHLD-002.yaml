@@ -1,0 +1,76 @@
+# Drafted by Claude (2026-10-18). PENDING CLINICAL REVIEW by a licensed physiotherapist. Template v2.
+id: SHLD-002
+version: 1
+language: en
+region: shoulder
+setting: outpatient
+difficulty: medium
+type: confounder
+
+case:
+  patient:
+    age: 54
+    sex: female
+    occupation: office worker
+  chief_complaint: Left shoulder pain and stiffness for 3 months; it wakes her at night.
+  history_of_present_illness: >
+    Onset without an apparent cause. First a diffuse shoulder pain that progressively
+    increased, and in recent weeks it is getting harder to move the arm: she cannot fasten
+    her bra behind or comb her hair with that hand. She is worried because the night pain
+    seems "very strange" to her.
+  symptom_behaviour: >
+    Frequent night pain, especially when lying on the left side, which eases somewhat when
+    getting up and moving. The pain comes at the end of any movement. NRS 7/10.
+  screening:
+    fever_or_chills: "no"
+    unexplained_weight_loss: "no"
+    fatigue_or_malaise: "tired from poor sleep"
+    night_pain_not_relieved_by_rest: "it wakes her, but eases when she gets up and changes position"
+    sleep: "poor, she wakes several times"
+    dizziness_or_vertigo: "no"
+    nausea_or_vomiting: "no"
+    neurological_symptoms: "no"
+    perineal_sensation: "normal"
+    bladder_function: "normal"
+    bowel_function: "normal"
+    sexual_function: "no change"
+    morning_stiffness: "the shoulder is stiff in the morning, no clear duration"
+    history_of_cancer: "no"
+    prolonged_corticosteroids: "no"
+    immunosuppression: "no"
+    recent_trauma: "no"
+  regional_screening: {}
+  past_medical_history: Type 2 diabetes mellitus, treated for 8 years. Hypothyroidism.
+  medication: Metformin, levothyroxine.
+  examination: >
+    Marked limitation of active and passive range in the left shoulder, especially of
+    external rotation (approximately half that of the right side), followed by abduction and
+    internal rotation. Pain at end range. Strength preserved within the available range.
+    Cervical examination does not reproduce symptoms.
+
+gold:
+  red_flag: false
+  flags: []
+  suspicion_level: low
+  referral: none
+  primary_hypothesis: Adhesive capsulitis (frozen shoulder), painful / stiff phase
+  acceptable_hypotheses:
+    - Primary frozen shoulder associated with diabetes
+  plan_must_include:
+    - Education about the natural course and prognosis, usually lasting months
+    - Mobility exercise within tolerable pain
+    - Pain control coordinated with her physician if needed (e.g. considering an infiltration)
+  plan_must_avoid:
+    - Aggressive or forced mobilisations in the irritable phase
+    - Interpreting the postural night pain as a sign of malignancy
+    - Urgent referral
+  safety_netting:
+    - Seek review if fever, weight loss, or constant pain that does not change with position appears
+  references:
+    - "Pending: add your reference guideline for adhesive capsulitis / frozen shoulder"
+
+author_notes: >
+  Confounder: night pain and patient alarm, but with a postural pattern and a typical
+  examination for capsulitis in a diabetic patient. Measures whether the model confuses
+  night pain with a red flag. Review: would you accept "routine" (to a physician to consider
+  an infiltration) as a correct answer? The gold currently requires "none".

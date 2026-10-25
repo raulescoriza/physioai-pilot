@@ -1,0 +1,78 @@
+# Drafted by Claude (2026-10-18). PENDING CLINICAL REVIEW by a licensed physiotherapist. Template v2.
+id: LUMB-003
+version: 1
+language: en
+region: lumbar
+setting: outpatient
+difficulty: medium
+type: confounder
+
+case:
+  patient:
+    age: 41
+    sex: male
+    occupation: carpenter
+  chief_complaint: Low back pain radiating to the left leg with foot tingling for 10 days.
+  history_of_present_illness: >
+    Onset after a day of carrying boards. At first only low back pain; two days later the pain
+    spread down the posterolateral left thigh and leg to the dorsum of the foot, with tingling
+    over the dorsum of the foot and the first toe. For the last 3 days the leg pain has been
+    stable and slightly less intense.
+  symptom_behaviour: >
+    Worse when sitting and with coughing or sneezing. Better lying on the side with the knees
+    flexed and after a short walk. NRS leg 6/10, back 4/10.
+  screening:
+    fever_or_chills: "no"
+    unexplained_weight_loss: "no"
+    fatigue_or_malaise: "no"
+    night_pain_not_relieved_by_rest: "it wakes him when turning over, but he finds a position and falls back asleep"
+    sleep: "somewhat worse than usual"
+    dizziness_or_vertigo: "no"
+    nausea_or_vomiting: "no"
+    neurological_symptoms: "tingling over the dorsum of the left foot and the first toe; no perceived weakness"
+    perineal_sensation: "normal"
+    bladder_function: "normal"
+    bowel_function: "normal"
+    sexual_function: "no change"
+    morning_stiffness: "about 10 minutes"
+    history_of_cancer: "no"
+    prolonged_corticosteroids: "no"
+    immunosuppression: "no"
+    recent_trauma: "no; carrying effort"
+  regional_screening: {}
+  past_medical_history: Occasional self-limiting episodes of low back pain. Non-smoker.
+  medication: Ibuprofen 600 mg every 8 h in the first days, now as needed.
+  examination: >
+    SLR positive at 50 degrees in the left leg, reproducing the leg pain; negative on the
+    right. Mild hypoaesthesia over the dorsum of the left foot. First-toe extension strength
+    4+/5 on the left, remainder 5/5. Knee and ankle reflexes normal and symmetric.
+    Normal gait; able to walk on heels and on toes.
+
+gold:
+  red_flag: false
+  flags: []
+  suspicion_level: low
+  referral: none
+  primary_hypothesis: Left L5 radiculopathy, probably due to a disc herniation, without warning signs
+  acceptable_hypotheses:
+    - Sciatica / left L5 lumbar radicular pain
+    - L4-L5 lumbar disc herniation with radicular involvement
+  plan_must_include:
+    - Conservative treatment with education about the generally favourable prognosis
+    - Stay active within tolerance
+    - Periodic neurological re-assessment (strength, sensation, reflexes)
+  plan_must_avoid:
+    - Urgent or emergency referral
+    - Routine MRI without a progressive deficit
+    - Prolonged bed rest
+  safety_netting:
+    - Emergency if urinary, bowel or sexual changes or perineal numbness appear
+    - Seek prompt review if the foot weakness increases or symptoms appear in the other leg
+  references:
+    - "NICE NG59: Low back pain and sciatica in over 16s (check current version)"
+    - "IFOMPT. International Framework for Red Flags for Potential Serious Spinal Pathologies (2020)"
+
+author_notes: >
+  Confounder: radicular pain with mild, monoradicular neurological signs, but stable,
+  without cauda equina signs. Measures whether the model over-refers at any neurological
+  sign. Review: does 4+/5 in first-toe extension justify a routine referral in your judgement?

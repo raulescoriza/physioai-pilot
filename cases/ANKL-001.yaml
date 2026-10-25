@@ -1,0 +1,73 @@
+# Drafted by Claude (2026-10-18). PENDING CLINICAL REVIEW by a licensed physiotherapist. Template v2.
+id: ANKL-001
+version: 1
+language: en
+region: ankle_foot
+setting: outpatient
+difficulty: low
+type: standard
+
+case:
+  patient:
+    age: 23
+    sex: male
+    occupation: student, plays basketball
+  chief_complaint: Sprain of the right ankle while playing basketball 2 days ago.
+  history_of_present_illness: >
+    While falling from a rebound he stepped on another player's foot and the ankle rolled inward.
+    He felt pain on the outside of the ankle and it swelled within the first hours. He was able
+    to walk off the court, limping. First sprain in that ankle.
+  symptom_behaviour: >
+    Pain on walking, especially on heel contact and toe-off. Improves with rest and elevation.
+    NRS 4/10 while walking.
+  screening:
+    fever_or_chills: "no"
+    unexplained_weight_loss: "no"
+    fatigue_or_malaise: "no"
+    night_pain_not_relieved_by_rest: "no"
+    sleep: "good"
+    dizziness_or_vertigo: "no"
+    nausea_or_vomiting: "no"
+    neurological_symptoms: "no"
+    perineal_sensation: "normal"
+    bladder_function: "normal"
+    bowel_function: "normal"
+    sexual_function: "no change"
+    morning_stiffness: "no"
+    history_of_cancer: "no"
+    prolonged_corticosteroids: "no"
+    immunosuppression: "no"
+    recent_trauma: "ankle sprain 2 days ago"
+  regional_screening: {}
+  past_medical_history: No relevant history.
+  medication: None.
+  examination: >
+    Edema and ecchymosis over the lateral aspect of the ankle. Pain on palpation over the
+    anterior talofibular ligament. No pain on palpation of the posterior border or the tip of
+    either malleolus, of the base of the fifth metatarsal, or of the navicular. Walks 4 steps
+    in the clinic with a limp. Anterior drawer with a mild increase in laxity and a firm end-point.
+
+gold:
+  red_flag: false
+  flags: []
+  suspicion_level: low
+  referral: none
+  primary_hypothesis: Lateral ankle sprain grade I-II (anterior talofibular ligament)
+  acceptable_hypotheses:
+    - Sprain of the lateral ligament(s) of the ankle
+  plan_must_include:
+    - Progressive loading as tolerated
+    - Mobility, strength and proprioception exercises
+    - Recurrence prevention in the return to sport
+  plan_must_avoid:
+    - Ordering an X-ray (Ottawa Ankle Rules are negative)
+    - Prolonged rigid immobilization
+  safety_netting:
+    - Seek review if weight-bearing is not possible or the pain worsens instead of improving over the next few days
+  references:
+    - "Bachmann LM, et al. Accuracy of Ottawa ankle rules to exclude fractures: systematic review (BMJ 2003) — check for updates"
+    - "Pending: add your reference guideline for lateral ankle sprain"
+
+author_notes: >
+  Control case with negative Ottawa Ankle Rules: checks that the model does not request an
+  X-ray without indication. The data needed to apply the rules are in the examination.

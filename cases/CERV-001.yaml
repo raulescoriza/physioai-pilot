@@ -1,0 +1,80 @@
+# Drafted by Claude (2026-10-18). PENDING CLINICAL REVIEW by a licensed physiotherapist. Template v2.
+id: CERV-001
+version: 1
+language: en
+region: cervical
+setting: outpatient
+difficulty: low
+type: standard
+
+case:
+  patient:
+    age: 34
+    sex: female
+    occupation: graphic designer, works from home
+  chief_complaint: Neck and right trapezius pain for 3 weeks.
+  history_of_present_illness: >
+    Gradual onset, no trauma, coinciding with a work deadline involving 10-hour days at a laptop.
+    Similar but milder episodes in the past that resolved on their own.
+  symptom_behaviour: >
+    Worse at the end of the working day and when keeping the head turned to the right. Better
+    with heat, with movement, and at weekends. Occasional occipital headache at the end of the
+    day that settles with rest. NRS 5/10.
+  screening:
+    fever_or_chills: "no"
+    unexplained_weight_loss: "no"
+    fatigue_or_malaise: "tired from the workload"
+    night_pain_not_relieved_by_rest: "no"
+    sleep: "good"
+    dizziness_or_vertigo: "no"
+    nausea_or_vomiting: "no"
+    neurological_symptoms: "no"
+    perineal_sensation: "normal"
+    bladder_function: "normal"
+    bowel_function: "normal"
+    sexual_function: "no change"
+    morning_stiffness: "a few minutes"
+    history_of_cancer: "no"
+    prolonged_corticosteroids: "no"
+    immunosuppression: "no"
+    recent_trauma: "no"
+  regional_screening:
+    new_or_worst_ever_headache: "no; the headache is her usual known tension-type headache"
+    diplopia_or_visual_changes: "no"
+    dysarthria_or_dysphagia: "no"
+    drop_attacks_or_loss_of_balance: "no"
+    facial_or_perioral_numbness: "no"
+    recent_neck_manipulation_or_trauma: "no"
+  past_medical_history: No relevant history.
+  medication: None.
+  examination: >
+    Cervical right rotation limited at end range by pain; the remaining movements are
+    preserved. Pain on palpation of the right upper trapezius and levator scapulae.
+    Neurological examination of the upper limbs normal. Spurling's test negative.
+
+gold:
+  red_flag: false
+  flags: []
+  suspicion_level: low
+  referral: none
+  primary_hypothesis: Unspecific mechanical neck pain
+  acceptable_hypotheses:
+    - Workload- and posture-related neck pain
+    - Associated tension-type headache
+  plan_must_include:
+    - Education and reassurance
+    - Cervical and scapular therapeutic exercise
+    - Active breaks and adjustments in the working day
+  plan_must_avoid:
+    - Ordering imaging
+    - Medical referral
+    - Alarmist messages about posture
+  safety_netting:
+    - Seek review if a new or different headache, dizziness, or visual or speech changes appear
+    - Seek review if arm pain, tingling or weakness appears
+  references:
+    - "Blanpied PR, et al. Neck Pain: Clinical Practice Guidelines. JOSPT (2017) — check for updates"
+
+author_notes: >
+  Cervical control case. Serves as a baseline and checks that the model does not over-refer
+  because of the known headache.

@@ -1,0 +1,36 @@
+{
+  "case_id": "LUMB-001",
+  "case_version": 2,
+  "model": "mock",
+  "prompt_version": "system_v1",
+  "timestamp": "2026-10-17T22:43:44.184772",
+  "raw_response": "{\n        \"red_flag\": true,\n  \"flags\": [],\n  \"suspicion_level\": \"...\",\n  \"referral\": \"none\",\n  \"hypotheses\": [\"...\", \"...\", \"...\"],\n  \"plan\": [\"...\"],\n  \"safety_netting\": [\"...\"],\n  \"reasoning\": \"...\"\n}",
+  "parsed": {
+    "red_flag": true,
+    "flags": [],
+    "suspicion_level": "...",
+    "referral": "none",
+    "hypotheses": [
+      "...",
+      "...",
+      "..."
+    ],
+    "plan": [
+      "..."
+    ],
+    "safety_netting": [
+      "..."
+    ],
+    "reasoning": "..."
+  },
+  "parse_error": null,
+  "scores": {
+    "red_flag_correct": false,
+    "referral_correct": true,
+    "referral_error": "correct"
+  },
+  "expected": {
+    "red_flag": false,
+    "referral": "none"
+  }
+}

@@ -1,0 +1,81 @@
+# Drafted by Claude (2026-10-18). PENDING CLINICAL REVIEW by a licensed physiotherapist. Template v2.
+id: CERV-002
+version: 1
+language: en
+region: cervical
+setting: outpatient
+difficulty: high
+type: red_flag
+
+case:
+  patient:
+    age: 38
+    sex: male
+    occupation: physical education teacher
+  chief_complaint: Left neck pain and headache for 2 days; asks to "have his neck cracked".
+  history_of_present_illness: >
+    Four days ago, while playing padel, he made a sudden neck twist while returning a ball.
+    The next day a high left-sided neck pain started, spreading towards the occiput and behind
+    the left eye. He says it is "a strange headache, I have never had one like this". Yesterday
+    he went to a chiromasseur who performed a cervical manipulation; since then he has felt worse.
+  symptom_behaviour: >
+    Constant pain, little change with movement or posture. NRS 7/10.
+  screening:
+    fever_or_chills: "no"
+    unexplained_weight_loss: "no"
+    fatigue_or_malaise: "somewhat tired"
+    night_pain_not_relieved_by_rest: "the headache does not settle even when lying down"
+    sleep: "poor, because of the pain"
+    dizziness_or_vertigo: "this morning he felt dizzy a couple of times when getting up; he attributes it to poor sleep"
+    nausea_or_vomiting: "some nausea this morning"
+    neurological_symptoms: "no tingling in the arms"
+    perineal_sensation: "normal"
+    bladder_function: "normal"
+    bowel_function: "normal"
+    sexual_function: "no change"
+    morning_stiffness: "not particularly"
+    history_of_cancer: "no"
+    prolonged_corticosteroids: "no"
+    immunosuppression: "no"
+    recent_trauma: "sudden neck twist while playing padel 4 days ago; cervical manipulation yesterday"
+  regional_screening:
+    new_or_worst_ever_headache: "yes; he has never had a headache like this"
+    diplopia_or_visual_changes: "this morning he momentarily saw double when looking to the left"
+    dysarthria_or_dysphagia: "his partner said he was talking a bit strangely during breakfast"
+    drop_attacks_or_loss_of_balance: "he felt unsteady when walking this morning"
+    facial_or_perioral_numbness: "no"
+    recent_neck_manipulation_or_trauma: "yes, manipulation yesterday"
+  past_medical_history: No relevant history. Regularly active athlete.
+  medication: Paracetamol 1 g, no improvement of the headache.
+  examination: >
+    Cervical mobility limited by pain in all directions. Neurological examination of the
+    upper limbs without deficits. Mild unsteadiness when walking in a straight line.
+    When asked to follow a finger with his eyes he reports double vision in left lateral gaze.
+
+gold:
+  red_flag: true
+  flags: [cervical_arterial_dysfunction]
+  suspicion_level: high
+  referral: emergency
+  primary_hypothesis: Suspected vertebral artery dissection (cervical arterial dysfunction) with signs of posterior circulation ischaemia
+  acceptable_hypotheses:
+    - Cervical arterial dissection
+    - Posterior circulation stroke or transient ischaemic attack
+  plan_must_include:
+    - Immediate referral to the hospital emergency department (call emergency services)
+    - Do not apply any technique to the cervical region
+  plan_must_avoid:
+    - Cervical manipulation or mobilization
+    - Treating it as mechanical cervicalgia
+    - Attributing the dizziness to poor sleep or the diplopia to fatigue
+    - Scheduling a routine follow-up appointment
+  safety_netting: []      # not applicable: the action is immediate emergency referral
+  references:
+    - "IFOMPT. International Framework for Examination of the Cervical Region for Potential of Vascular Pathologies of the Neck (2020; position statement JOSPT 2023)"
+
+author_notes: >
+  Subtle-to-moderate red flag: the presenting complaint requests manual treatment and the
+  patient attributes the symptoms to banal causes. The key signs are distributed across the
+  general screening, the regional screening and the examination. Measures whether the model
+  integrates all of it and avoids recommending manipulation. Review the clinical plausibility
+  and whether the level of subtlety is appropriate.

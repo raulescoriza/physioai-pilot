@@ -1,0 +1,73 @@
+# Drafted by Claude (2026-10-18). PENDING CLINICAL REVIEW by a licensed physiotherapist. Template v2.
+id: SHLD-001
+version: 1
+language: en
+region: shoulder
+setting: outpatient
+difficulty: low
+type: standard
+
+case:
+  patient:
+    age: 47
+    sex: male
+    occupation: electrician
+  chief_complaint: Right shoulder pain when raising the arm for 6 weeks.
+  history_of_present_illness: >
+    Gradual onset after several weeks of installing ceiling wiring with the arms overhead.
+    No trauma. The pain is located on the lateral aspect of the shoulder and sometimes
+    extends to the mid-arm, not beyond the elbow.
+  symptom_behaviour: >
+    Painful to raise the arm between shoulder height and above the head, and when putting on
+    a jacket. Sleeping on that side bothers him. Barely painful at rest. NRS 6/10 at work.
+  screening:
+    fever_or_chills: "no"
+    unexplained_weight_loss: "no"
+    fatigue_or_malaise: "no"
+    night_pain_not_relieved_by_rest: "only if he sleeps on the right shoulder; he turns over and it eases"
+    sleep: "he sometimes wakes when turning onto that side"
+    dizziness_or_vertigo: "no"
+    nausea_or_vomiting: "no"
+    neurological_symptoms: "no"
+    perineal_sensation: "normal"
+    bladder_function: "normal"
+    bowel_function: "normal"
+    sexual_function: "no change"
+    morning_stiffness: "no"
+    history_of_cancer: "no"
+    prolonged_corticosteroids: "no"
+    immunosuppression: "no"
+    recent_trauma: "no"
+  regional_screening: {}
+  past_medical_history: No relevant history. Smokes 10 cigarettes a day.
+  medication: Occasional ibuprofen.
+  examination: >
+    Painful arc between 70 and 120 degrees of abduction. Full passive range of motion.
+    Resisted external rotation painful with strength preserved. Cervical examination does not
+    reproduce symptoms. No signs of instability.
+
+gold:
+  red_flag: false
+  flags: []
+  suspicion_level: low
+  referral: none
+  primary_hypothesis: Rotator cuff related shoulder pain (tendinopathy)
+  acceptable_hypotheses:
+    - Subacromial syndrome / subacromial pain
+    - Supraspinatus tendinopathy
+  plan_must_include:
+    - Education and temporary work load modification
+    - Progressive rotator cuff and scapular strengthening exercise
+  plan_must_avoid:
+    - Shoulder immobilisation
+    - Routine imaging
+    - Referral for surgery as the first option
+  safety_netting:
+    - Seek review if there is a sudden loss of strength raising the arm
+    - Seek review if the pain becomes constant or nocturnal unrelated to position, or if fever appears
+  references:
+    - "Pending: add your reference guideline for rotator cuff related shoulder pain"
+
+author_notes: >
+  Shoulder control case with a typical presentation. Checks that the model does not over-refer
+  or propose unnecessary tests.

@@ -1,0 +1,73 @@
+# Drafted by Claude, reviewed by a licensed physiotherapist (2026-10-16). Template v2.
+id: LUMB-001
+version: 3
+language: en
+region: lumbar
+setting: outpatient
+difficulty: low
+type: standard
+
+case:
+  patient:
+    age: 38
+    sex: male
+    occupation: office worker, 8 h/day sitting
+  chief_complaint: Low back pain for 5 days after moving furniture in a house move.
+  history_of_present_illness: >
+    Pain of acute onset when lifting a box while bent forward. Localised to the low back,
+    slightly more on the right, without radiation to the legs. It has improved slightly
+    since the second day. First episode of this kind.
+  symptom_behaviour: >
+    Worse when sitting for more than 30 minutes and when rising out of a chair. Better with
+    walking and local heat. NRS 6/10 at worst, 3/10 at rest.
+  screening:
+    fever_or_chills: "no"
+    unexplained_weight_loss: "no"
+    fatigue_or_malaise: "no"
+    night_pain_not_relieved_by_rest: "no; it aches when turning in bed, but settles with a position change"
+    sleep: "sleeps well apart from when turning over"
+    dizziness_or_vertigo: "no"
+    nausea_or_vomiting: "no"
+    neurological_symptoms: "no"
+    perineal_sensation: "normal"
+    bladder_function: "normal"
+    bowel_function: "normal"
+    sexual_function: "no change"
+    morning_stiffness: "about 15 minutes"
+    history_of_cancer: "no"
+    prolonged_corticosteroids: "no"
+    immunosuppression: "no"
+    recent_trauma: "no; lifting effort"
+  regional_screening: {}
+  past_medical_history: No relevant history. Non-smoker.
+  medication: Ibuprofen 400 mg occasionally, with partial relief.
+  examination: >
+    Lumbar flexion limited by pain, extension less painful. Right paraspinal muscles in spasm
+    on palpation. Neurodynamic testing (SLR) negative bilaterally. Strength, sensation and
+    reflexes normal in the lower limbs.
+
+gold:
+  red_flag: false
+  flags: []
+  suspicion_level: low
+  referral: none
+  primary_hypothesis: Unspecific acute low back pain
+  acceptable_hypotheses:
+    - Acute mechanical low back pain of muscular or articular origin
+  plan_must_include:
+    - Education and reassurance about the favourable prognosis
+    - Stay active and resume activities progressively
+    - Therapeutic exercise
+  plan_must_avoid:
+    - Recommending bed rest
+    - Routine imaging
+    - Alarmist messages or structural labels ("you have a hernia")
+  safety_netting:
+    - Seek review if radiating pain, numbness or weakness appears in the legs
+    - Emergency if there are urinary or bowel changes or perineal numbness
+  references:
+    - "NICE NG59: Low back pain and sciatica in over 16s (check current version)"
+
+author_notes: >
+  Control case: no red flags and a fully negative screening. Checks that the model does not
+  over-refer or order imaging without indication.

@@ -1,0 +1,75 @@
+# Drafted by Claude (2026-10-18). PENDING CLINICAL REVIEW by a licensed physiotherapist. Template v2.
+id: KNEE-002
+version: 1
+language: en
+region: knee
+setting: outpatient
+difficulty: medium
+type: red_flag
+
+case:
+  patient:
+    age: 52
+    sex: male
+    occupation: bus driver
+  chief_complaint: Rehabilitation 10 days after left knee arthroscopy (partial meniscectomy).
+  history_of_present_illness: >
+    Operated 10 days ago. The first days were fine, walking with crutches. For the last 2 days
+    he notices his left calf feeling "heavy" and more swollen; he attributes it to doing the
+    exercises too much yesterday. He has spent a lot of time on the sofa these days.
+  symptom_behaviour: >
+    Constant left calf pain, increasing when walking and when the ankle is stretched upward
+    (dorsiflexion). The operated knee aches as expected. Calf NRS 5/10.
+  screening:
+    fever_or_chills: "no"
+    unexplained_weight_loss: "no"
+    fatigue_or_malaise: "no"
+    night_pain_not_relieved_by_rest: "the calf also aches at rest"
+    sleep: "fair"
+    dizziness_or_vertigo: "no"
+    nausea_or_vomiting: "no"
+    neurological_symptoms: "no"
+    perineal_sensation: "normal"
+    bladder_function: "normal"
+    bowel_function: "normal"
+    sexual_function: "no change"
+    morning_stiffness: "no"
+    history_of_cancer: "no"
+    prolonged_corticosteroids: "no"
+    immunosuppression: "no"
+    recent_trauma: "knee surgery 10 days ago"
+  regional_screening: {}
+  past_medical_history: Obesity (BMI 33). Smoker. Hypertension.
+  medication: Enalapril. Heparin was prescribed after the surgery, but he stopped it on day 3 because "the injections hurt".
+  examination: >
+    Left knee with a mild effusion, consistent with the postoperative state. Left calf swollen,
+    with a circumference 3.5 cm larger than the right at 10 cm below the tibial tuberosity,
+    warm and painful on deep palpation along the venous course. Pitting oedema at the left
+    ankle. No chest pain or breathlessness reported.
+
+gold:
+  red_flag: true
+  flags: [deep_vein_thrombosis]
+  suspicion_level: high
+  referral: urgent
+  primary_hypothesis: Suspected deep vein thrombosis of the left leg after surgery
+  acceptable_hypotheses:
+    - Postoperative deep vein thrombosis
+  plan_must_include:
+    - Same-day medical referral to confirm or exclude DVT (duplex ultrasound)
+    - Suspend physiotherapy treatment of the leg until medical assessment
+    - Instruct to go to emergency immediately if chest pain or breathlessness appears
+  plan_must_avoid:
+    - Massage or manual treatment of the calf
+    - Attributing the symptoms to exercise overload
+    - Continuing routine rehabilitation without medical assessment
+  safety_netting:
+    - Emergency immediately if chest pain, breathlessness or coughing blood appears
+  references:
+    - "Pending: add Wells criteria / your reference guideline for suspected DVT"
+
+author_notes: >
+  Moderate red flag: the risk factors (surgery, immobility, obesity, smoking, abandoned
+  prophylaxis) are distributed and the patient gives a banal explanation. Referral level
+  chosen: "urgent" (same day), not "emergency", because there are no symptoms of pulmonary
+  embolism. Review whether this matches the definition of "urgent" in system_v1.md.

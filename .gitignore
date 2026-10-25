@@ -1,0 +1,14 @@
+# Local environment / secrets (endpoints, API keys)
+.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local tooling / session state
+.opencode/

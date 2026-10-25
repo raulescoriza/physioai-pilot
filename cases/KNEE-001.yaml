@@ -1,0 +1,71 @@
+# Drafted by Claude (2026-10-18). PENDING CLINICAL REVIEW by a licensed physiotherapist. Template v2.
+id: KNEE-001
+version: 1
+language: en
+region: knee
+setting: outpatient
+difficulty: low
+type: standard
+
+case:
+  patient:
+    age: 26
+    sex: female
+    occupation: student, recreational runner
+  chief_complaint: Pain in the front of the right knee when running for 2 months.
+  history_of_present_illness: >
+    Started while training for her first half marathon, increasing weekly mileage substantially
+    in a short time and adding hill intervals. No trauma, no locking or giving-way of the knee.
+  symptom_behaviour: >
+    Diffuse pain around and behind the patella. Worse going down stairs, squatting, and after
+    sitting for long periods with the knees flexed. Better with relative rest. NRS 5/10
+    when running.
+  screening:
+    fever_or_chills: "no"
+    unexplained_weight_loss: "no"
+    fatigue_or_malaise: "no"
+    night_pain_not_relieved_by_rest: "no"
+    sleep: "good"
+    dizziness_or_vertigo: "no"
+    nausea_or_vomiting: "no"
+    neurological_symptoms: "no"
+    perineal_sensation: "normal"
+    bladder_function: "normal"
+    bowel_function: "normal"
+    sexual_function: "no change"
+    morning_stiffness: "no"
+    history_of_cancer: "no"
+    prolonged_corticosteroids: "no"
+    immunosuppression: "no"
+    recent_trauma: "no"
+  regional_screening: {}
+  past_medical_history: No relevant history.
+  medication: None.
+  examination: >
+    No joint effusion. Full range of motion. Pain on a right single-leg squat, with dynamic
+    knee valgus. Pain on palpation of the patellar facets. Meniscal and ligament tests
+    negative.
+
+gold:
+  red_flag: false
+  flags: []
+  suspicion_level: low
+  referral: none
+  primary_hypothesis: Patellofemoral pain
+  acceptable_hypotheses:
+    - Patellofemoral pain syndrome related to a load increase
+  plan_must_include:
+    - Education and training load adjustment
+    - Hip and knee strengthening exercise
+    - Progressive return to running
+  plan_must_avoid:
+    - Prolonged complete sports rest
+    - Routine imaging
+    - Referral for surgery
+  safety_netting:
+    - Seek review if swelling, locking or a giving-way sensation of the knee appears
+  references:
+    - "Crossley KM, et al. Patellofemoral pain consensus statement (2016) — check for updates"
+
+author_notes: >
+  Knee control case with a typical presentation in a female runner.

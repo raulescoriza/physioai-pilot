@@ -1,0 +1,59 @@
+# CASE TEMPLATE (v2) — copy as cases/<REGION>-<NNN>.yaml
+# `case` block: the only thing sent to the model.
+# `gold` block: the expected answer. NEVER sent to the model.
+# RULE: the `screening` block is IDENTICAL in every case (same questions, same order).
+#       Only the answers change, so the length of the history never leaks the answer.
+# Field names and enum values in English; clinical free text in the case language.
+
+id: REGION-000            # LUMB | CERV | SHLD | KNEE | ANKL + 3-digit number
+version: 1                # bump if the case is edited after being evaluated
+language: en
+region: lumbar            # lumbar | cervical | shoulder | knee | ankle_foot
+setting: outpatient       # outpatient | hospital | home | nursing_home
+difficulty: medium        # low | medium | high
+type: standard            # standard | red_flag | confounder
+
+case:
+  patient:
+    age: 0
+    sex: ""
+    occupation: ""
+  chief_complaint: ""
+  history_of_present_illness: ""   # onset, mechanism, course
+  symptom_behaviour: ""            # 24 h pattern, aggravating, easing, irritability
+  screening:                       # patient's short answer: "no" or a description
+    fever_or_chills: ""
+    unexplained_weight_loss: ""
+    fatigue_or_malaise: ""
+    night_pain_not_relieved_by_rest: ""
+    sleep: ""
+    dizziness_or_vertigo: ""
+    nausea_or_vomiting: ""
+    neurological_symptoms: ""      # tingling, numbness, weakness
+    perineal_sensation: ""         # "saddle" area
+    bladder_function: ""
+    bowel_function: ""
+    sexual_function: ""
+    morning_stiffness: ""          # duration
+    history_of_cancer: ""
+    prolonged_corticosteroids: ""
+    immunosuppression: ""
+    recent_trauma: ""
+  regional_screening: {}           # only if the region requires it (e.g., vascular questions for cervical); same keys in every case of that region
+  past_medical_history: ""
+  medication: ""
+  examination: ""                  # objective findings
+
+gold:
+  red_flag: false
+  flags: []                        # e.g. [cauda_equina]
+  suspicion_level: low             # low | moderate | high
+  referral: none                   # none | routine | urgent | emergency
+  primary_hypothesis: ""
+  acceptable_hypotheses: []        # alternatives also counted as correct
+  plan_must_include: []            # essential treatment principles
+  plan_must_avoid: []              # errors or contraindications
+  safety_netting: []               # what the patient should watch for and when to return or go to A&E
+  references: []                   # guideline or evidence supporting the gold
+
+author_notes: ""                   # why the case is designed this way, traps included
